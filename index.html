@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutique Heyni — Romántica &amp; Femenina</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-basket-shopping"></i>
+    <span id="toastMsg">Producto añadido</span>
+  </div>
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-feather-pointed"></i>
+        <div>
+          <span class="logo-main">Heyni</span>
+          <span class="logo-sub">Boutique</span>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero"      class="nm-link">Inicio</a>
+        <a href="#coleccion" class="nm-link">Catálogo</a>
+        <a href="#nosotros"  class="nm-link">Nosotros</a>
+        <a href="#ofertas"   class="nm-link">Ofertas</a>
+        <a href="#contacto"  class="nm-link">Contacto</a>
+      </nav>
+      <div class="nav-right">
+        <button class="icon-btn" id="darkToggle" aria-label="Modo oscuro">
+          <i class="fa-solid fa-moon" id="darkIcon"></i>
+        </button>
+        <button class="icon-btn" id="cartTrigger" aria-label="Carrito">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-pill" id="cartPill">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="petals" aria-hidden="true">
+      <span class="petal" style="--x:10%;--d:0s;--s:1.2">✿</span>
+      <span class="petal" style="--x:25%;--d:1.5s;--s:0.9">❀</span>
+      <span class="petal" style="--x:42%;--d:3s;--s:1.4">✾</span>
+      <span class="petal" style="--x:60%;--d:0.8s;--s:1">✿</span>
+      <span class="petal" style="--x:75%;--d:2.2s;--s:1.3">❀</span>
+      <span class="petal" style="--x:88%;--d:4s;--s:0.8">✾</span>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy fade-up">
+        <p class="eyebrow"><span class="eyebrow-line"></span>Colección Primavera 2025</p>
+        <h1 class="hero-h1">
+          Para la mujer<br/>que florece<br/><em>cada día</em>
+        </h1>
+        <p class="hero-p">Piezas únicas con alma. Moda que celebra tu feminidad desde el primer vistazo.</p>
+        <div class="hero-btns">
+          <a href="#coleccion" class="btn-bloom">Explorar colección</a>
+          <a href="#nosotros"  class="btn-outline">Nuestra historia →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>+2K</strong><span>Clientas</span></div>
+          <div class="sdiv"></div>
+          <div class="stat"><strong>5★</strong><span>Valoración</span></div>
+          <div class="sdiv"></div>
+          <div class="stat"><strong>100%</strong><span>Auténtico</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-up">
+        <div class="hero-frame">
+          <div class="frame-corner tl">✿</div>
+          <div class="frame-corner br">❀</div>
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=85&fit=crop&crop=top"
+               alt="Boutique Heyni modelo" class="hero-img"
+               onerror="this.src='https://picsum.photos/seed/herofashion/600/750'"/>
+          <div class="hero-float-tag"><i class="fa-solid fa-star"></i> Nueva temporada</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STRIP ══ -->
+  <div class="strip">
+    <div class="strip-track">
+      <span>Envío gratis +S/.200</span><span class="dot">◆</span>
+      <span>Devoluciones 30 días</span><span class="dot">◆</span>
+      <span>Colección exclusiva</span><span class="dot">◆</span>
+      <span>Pago 100% seguro</span><span class="dot">◆</span>
+      <span>Tallas XS – 3XL</span><span class="dot">◆</span>
+      <span>Envío gratis +S/.200</span><span class="dot">◆</span>
+      <span>Devoluciones 30 días</span><span class="dot">◆</span>
+      <span>Colección exclusiva</span><span class="dot">◆</span>
+      <span>Pago 100% seguro</span><span class="dot">◆</span>
+      <span>Tallas XS – 3XL</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ══ COLECCIÓN ══ -->
+  <section class="sec coleccion" id="coleccion">
+    <div class="wrap">
+      <div class="sec-head fade-up">
+        <p class="tag-label">✦ Catálogo 2025</p>
+        <h2 class="sec-h2">Piezas que te definen</h2>
+        <p class="sec-p">Curadoras de lo más bello de la temporada, pensando en ti.</p>
+      </div>
+
+      <div class="tabs fade-up" id="tabs">
+        <button class="tab active" data-f="all">Todo</button>
+        <button class="tab" data-f="vestidos">Vestidos</button>
+        <button class="tab" data-f="tops">Tops</button>
+        <button class="tab" data-f="jeans">Jeans</button>
+        <button class="tab" data-f="faldas">Faldas</button>
+        <button class="tab" data-f="blazers">Blazers</button>
+      </div>
+
+      <div class="prd-grid" id="prdGrid">
+
+        <!-- 1 Vestido -->
+        <article class="prd fade-up" data-cat="vestidos">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-v1/500/660" alt="Vestido Violeta Noche"/>
+            <span class="chip">Nuevo</span>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Vestido Violeta Noche" data-price="289">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Vestidos</span>
+            <h3>Vestido Violeta Noche</h3>
+            <div class="prd-price-row"><span class="price">S/.289</span><span class="old">S/.380</span></div>
+          </div>
+        </article>
+
+        <!-- 2 Top -->
+        <article class="prd fade-up" data-cat="tops">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-t1/500/660" alt="Top Lavanda Satin"/>
+            <span class="chip sale">−28%</span>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Top Lavanda Satin" data-price="129">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Tops</span>
+            <h3>Top Lavanda Satin</h3>
+            <div class="prd-price-row"><span class="price">S/.129</span><span class="old">S/.179</span></div>
+          </div>
+        </article>
+
+        <!-- 3 Blazer -->
+        <article class="prd fade-up" data-cat="blazers">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-b1/500/660" alt="Blazer Crema Botánico"/>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Blazer Crema Botánico" data-price="349">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Blazers</span>
+            <h3>Blazer Crema Botánico</h3>
+            <div class="prd-price-row"><span class="price">S/.349</span></div>
+          </div>
+        </article>
+
+        <!-- 4 Falda -->
+        <article class="prd fade-up" data-cat="faldas">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-f1/500/660" alt="Falda Rosa Jardín"/>
+            <span class="chip">Nuevo</span>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Falda Rosa Jardín" data-price="159">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Faldas</span>
+            <h3>Falda Rosa Jardín</h3>
+            <div class="prd-price-row"><span class="price">S/.159</span><span class="old">S/.210</span></div>
+          </div>
+        </article>
+
+        <!-- 5 Jeans -->
+        <article class="prd fade-up" data-cat="jeans">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-j1/500/660" alt="Jean Botanical Slim"/>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Jean Botanical Slim" data-price="199">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Jeans</span>
+            <h3>Jean Botanical Slim</h3>
+            <div class="prd-price-row"><span class="price">S/.199</span></div>
+          </div>
+        </article>
+
+        <!-- 6 Vestido 2 -->
+        <article class="prd fade-up" data-cat="vestidos">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-v2/500/660" alt="Vestido Floral Crema"/>
+            <span class="chip sale">−30%</span>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Vestido Floral Crema" data-price="249">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Vestidos</span>
+            <h3>Vestido Floral Crema</h3>
+            <div class="prd-price-row"><span class="price">S/.249</span><span class="old">S/.360</span></div>
+          </div>
+        </article>
+
+        <!-- 7 Top 2 -->
+        <article class="prd fade-up" data-cat="tops">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-t2/500/660" alt="Top Ivory Garden"/>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Top Ivory Garden" data-price="119">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Tops</span>
+            <h3>Top Ivory Garden</h3>
+            <div class="prd-price-row"><span class="price">S/.119</span></div>
+          </div>
+        </article>
+
+        <!-- 8 Blazer 2 -->
+        <article class="prd fade-up" data-cat="blazers">
+          <div class="prd-img">
+            <img src="https://picsum.photos/seed/heyni-b2/500/660" alt="Blazer Blush Floral"/>
+            <span class="chip">Nuevo</span>
+            <div class="prd-ov">
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn-bloom sm add-btn" data-name="Blazer Blush Floral" data-price="319">+ Agregar</button>
+            </div>
+          </div>
+          <div class="prd-body">
+            <span class="prd-cat">Blazers</span>
+            <h3>Blazer Blush Floral</h3>
+            <div class="prd-price-row"><span class="price">S/.319</span><span class="old">S/.400</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NOSOTROS ══ -->
+  <section class="sec nosotros" id="nosotros">
+    <div class="wrap nos-wrap">
+      <div class="nos-imgs fade-up">
+        <img class="nos-main" src="https://picsum.photos/seed/heyni-nos1/600/720" alt="Boutique Heyni"/>
+        <img class="nos-sec"  src="https://picsum.photos/seed/heyni-nos2/400/400" alt="Moda femenina"/>
+        <div class="nos-badge"><span class="nb-year">2018</span><span class="nb-lbl">Desde</span></div>
+      </div>
+      <div class="nos-copy fade-up">
+        <p class="tag-label">✦ Nuestra historia</p>
+        <h2 class="sec-h2 left">Nació del amor<br/><em>por florecer</em></h2>
+        <p class="nos-p">Boutique Heyni nació en Lima con un sueño sencillo: que cada mujer encuentre piezas que la hagan sentir exactamente como es — extraordinaria.</p>
+        <p class="nos-p">Creemos que la moda es un lenguaje silencioso. Por eso curaduramos cada colección con cuidado, intención y mucho amor.</p>
+        <ul class="nos-list">
+          <li><i class="fa-solid fa-seedling"></i> Materiales premium seleccionados a mano</li>
+          <li><i class="fa-solid fa-seedling"></i> Tallas inclusivas XS – 3XL</li>
+          <li><i class="fa-solid fa-seedling"></i> Asesoría de imagen personalizada</li>
+          <li><i class="fa-solid fa-seedling"></i> Envíos a todo el Perú</li>
+        </ul>
+        <a href="#contacto" class="btn-bloom">Conócenos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OFERTAS ══ -->
+  <section class="sec ofertas" id="ofertas">
+    <div class="wrap">
+      <div class="sec-head fade-up">
+        <p class="tag-label">✦ Tiempo limitado</p>
+        <h2 class="sec-h2">Ofertas especiales</h2>
+      </div>
+      <div class="oferta-card fade-up">
+        <div class="oferta-img-side">
+          <img src="https://picsum.photos/seed/heyni-offer/700/600" alt="Flash sale"/>
+        </div>
+        <div class="oferta-body">
+          <p class="oferta-ey">✿ Flash Sale exclusiva</p>
+          <h3 class="oferta-title">Hasta <em>40% OFF</em><br/>en toda la colección</h3>
+          <p class="oferta-p">No dejes pasar estas piezas. Stock limitado, precios únicos.</p>
+          <div class="countdown">
+            <div class="cd-box"><span id="cdH">00</span><label>Hrs</label></div>
+            <span class="cd-col">:</span>
+            <div class="cd-box"><span id="cdM">00</span><label>Min</label></div>
+            <span class="cd-col">:</span>
+            <div class="cd-box"><span id="cdS">00</span><label>Seg</label></div>
+          </div>
+          <a href="#coleccion" class="btn-bloom">Ver ofertas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIOS ══ -->
+  <section class="sec testi-sec" id="testimonios">
+    <div class="wrap">
+      <div class="sec-head fade-up">
+        <p class="tag-label">✦ Lo que dicen</p>
+        <h2 class="sec-h2">Clientas que nos aman</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card fade-up">
+          <div class="tq">"</div>
+          <p>"Compré el vestido floral para una boda y recibí mil halagos. La calidad es increíble y el servicio fue muy atento."</p>
+          <div class="ta">
+            <img src="https://picsum.photos/seed/heyni-u1/80/80" alt="Camila"/>
+            <div><strong>Camila Torres</strong><div class="stars">★★★★★</div></div>
+          </div>
+        </div>
+        <div class="testi-card fade-up">
+          <div class="tq">"</div>
+          <p>"Me encanta que tienen tallas para todas. El blazer crema llegó rapidísimo y es hermoso. ¡Mi boutique favorita!"</p>
+          <div class="ta">
+            <img src="https://picsum.photos/seed/heyni-u2/80/80" alt="Valentina"/>
+            <div><strong>Valentina Ríos</strong><div class="stars">★★★★★</div></div>
+          </div>
+        </div>
+        <div class="testi-card fade-up">
+          <div class="tq">"</div>
+          <p>"Precios accesibles para la calidad que ofrecen. El top lavanda es divino. Atención al cliente impecable."</p>
+          <div class="ta">
+            <img src="https://picsum.photos/seed/heyni-u3/80/80" alt="Sofía"/>
+            <div><strong>Sofía Mendoza</strong><div class="stars">★★★★★</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GALERÍA ══ -->
+  <section class="sec galeria" id="galeria">
+    <div class="wrap">
+      <div class="sec-head fade-up">
+        <p class="tag-label"><i class="fa-brands fa-instagram"></i> Síguenos</p>
+        <h2 class="sec-h2">@boutiqueheyni</h2>
+      </div>
+      <div class="gal-grid fade-up">
+        <a class="gal-item" href="#"><img src="https://picsum.photos/seed/heyni-g1/400/400" alt="Look 1"/><div class="gal-ov"><i class="fa-brands fa-instagram"></i></div></a>
+        <a class="gal-item" href="#"><img src="https://picsum.photos/seed/heyni-g2/400/400" alt="Look 2"/><div class="gal-ov"><i class="fa-brands fa-instagram"></i></div></a>
+        <a class="gal-item" href="#"><img src="https://picsum.photos/seed/heyni-g3/400/400" alt="Look 3"/><div class="gal-ov"><i class="fa-brands fa-instagram"></i></div></a>
+        <a class="gal-item" href="#"><img src="https://picsum.photos/seed/heyni-g4/400/400" alt="Look 4"/><div class="gal-ov"><i class="fa-brands fa-instagram"></i></div></a>
+        <a class="gal-item" href="#"><img src="https://picsum.photos/seed/heyni-g5/400/400" alt="Look 5"/><div class="gal-ov"><i class="fa-brands fa-instagram"></i></div></a>
+        <a class="gal-item" href="#"><img src="https://picsum.photos/seed/heyni-g6/400/400" alt="Look 6"/><div class="gal-ov"><i class="fa-brands fa-instagram"></i></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACTO ══ -->
+  <section class="sec contacto" id="contacto">
+    <div class="wrap contacto-wrap">
+      <div class="con-left fade-up">
+        <p class="tag-label">✦ Estamos para ti</p>
+        <h2 class="sec-h2 left">Hablemos<br/><em>con cariño</em></h2>
+        <p class="nos-p">¿Dudas sobre tallas, pedidos o envíos? Escríbenos — respondemos en menos de 24h.</p>
+        <ul class="con-list">
+          <li><span class="ci"><i class="fa-solid fa-location-dot"></i></span>Av. Larco 1234, Miraflores, Lima</li>
+          <li><span class="ci"><i class="fa-brands fa-whatsapp"></i></span>+51 987 654 321</li>
+          <li><span class="ci"><i class="fa-solid fa-envelope"></i></span>hola@boutiqueheyni.pe</li>
+          <li><span class="ci"><i class="fa-solid fa-clock"></i></span>Lun – Sáb: 10am – 8pm</li>
+        </ul>
+        <div class="soc-row">
+          <a href="#" class="soc-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <form class="con-form fade-up" id="contactForm" novalidate>
+        <div class="fg">
+          <label>Nombre completo</label>
+          <input type="text"   id="fNombre" placeholder="Tu nombre hermoso ✿"/>
+          <span class="fe" id="eNombre"></span>
+        </div>
+        <div class="fg">
+          <label>Correo electrónico</label>
+          <input type="email"  id="fEmail"  placeholder="tu@correo.com"/>
+          <span class="fe" id="eEmail"></span>
+        </div>
+        <div class="fg">
+          <label>Mensaje</label>
+          <textarea id="fMsg" rows="5" placeholder="¿En qué podemos ayudarte?"></textarea>
+          <span class="fe" id="eMsg"></span>
+        </div>
+        <button type="submit" class="btn-bloom full">
+          <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+        </button>
+        <div class="fsuc" id="fSuccess">
+          <i class="fa-solid fa-circle-check"></i> ¡Mensaje enviado! Te escribimos pronto 🌸
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-bloom" aria-hidden="true">✿ ❀ ✾ ✿ ❀ ✾ ✿ ❀ ✾ ✿ ❀ ✾ ✿ ❀ ✾ ✿ ❀</div>
+    <div class="wrap footer-inner">
+      <div class="ft-brand">
+        <a href="#hero" class="logo ft-logo">
+          <i class="fa-solid fa-feather-pointed"></i>
+          <div><span class="logo-main">Heyni</span><span class="logo-sub">Boutique</span></div>
+        </a>
+        <p>Moda femenina con alma. Piezas únicas para la mujer que celebra su esencia.</p>
+        <div class="soc-row">
+          <a href="#" class="soc-btn dk"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="soc-btn dk"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="soc-btn dk"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="soc-btn dk"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Navegar</h4>
+        <a href="#hero">Inicio</a><a href="#coleccion">Catálogo</a>
+        <a href="#nosotros">Nosotros</a><a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="ft-col">
+        <h4>Categorías</h4>
+        <a href="#coleccion">Vestidos</a><a href="#coleccion">Tops</a>
+        <a href="#coleccion">Jeans</a><a href="#coleccion">Faldas</a>
+        <a href="#coleccion">Blazers</a>
+      </div>
+      <div class="ft-col">
+        <h4>Contacto</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Av. Larco 1234, Miraflores</p>
+        <p><i class="fa-brands fa-whatsapp"></i> +51 987 654 321</p>
+        <p><i class="fa-solid fa-envelope"></i> hola@boutiqueheyni.pe</p>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <p>© 2025 Boutique Heyni. Todos los derechos reservados.</p>
+      <p>Hecho con <i class="fa-solid fa-heart"></i> en Lima, Perú</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/51987654321" class="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-ring"></span>
+  </a>
+
+  <button class="back-top" id="backTop" aria-label="Arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
