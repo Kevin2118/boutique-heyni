@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Barbería premium Barber X. Cortes modernos, fade, barba premium y más. Reserva tu cita."
+    />
+    <title>Barber X — Tu estilo empieza aquí</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ══ NAVBAR ══ -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">BX</a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#servicios">Servicios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#reservas" class="nav-cta">Reservar</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=85&fit=crop"
+          alt="Barbería Barber X"
+          onerror="this.src = 'https://picsum.photos/seed/barber-hero/1600/900'"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-tag">
+          <span class="tag-line"></span> Premium Barbershop
+        </p>
+        <h1 class="hero-title">Tu estilo<br /><em>empieza aquí</em></h1>
+        <p class="hero-sub">
+          Cortes precisos, barba impecable y experiencia premium en el corazón
+          de la ciudad.
+        </p>
+        <div class="hero-btns">
+          <a href="#reservas" class="btn-gold">Reservar cita</a>
+          <a href="#servicios" class="btn-ghost">Ver servicios</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>scroll</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- ══ SERVICIOS ══ -->
+    <section class="sec servicios" id="servicios">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="label">— Servicios</p>
+          <h2>Hecho con maestría</h2>
+          <p class="sec-sub">
+            Cada servicio diseñado para resaltar tu mejor versión.
+          </p>
+        </div>
+
+        <div class="srv-grid">
+          <div class="srv-card reveal">
+            <div class="srv-icon">✂</div>
+            <h3>Corte clásico</h3>
+            <p>Líneas limpias y estilo atemporal.</p>
+            <span class="srv-price">S/.35</span>
+            <a href="#reservas" class="srv-link">Reservar →</a>
+          </div>
+
+          <div class="srv-card reveal">
+            <div class="srv-icon">▲</div>
+            <h3>Fade</h3>
+            <p>Degradado preciso y moderno.</p>
+            <span class="srv-price">S/.45</span>
+            <a href="#reservas" class="srv-link">Reservar →</a>
+          </div>
+
+          <div class="srv-card reveal">
+            <div class="srv-icon">🪒</div>
+            <h3>Barba premium</h3>
+            <p>Toallas calientes y aceites.</p>
+            <span class="srv-price">S/.40</span>
+            <a href="#reservas" class="srv-link">Reservar →</a>
+          </div>
+
+          <div class="srv-card reveal">
+            <div class="srv-icon">✦</div>
+            <h3>Cejas</h3>
+            <p>Diseño y perfilado profesional.</p>
+            <span class="srv-price">S/.15</span>
+            <a href="#reservas" class="srv-link">Reservar →</a>
+          </div>
+
+          <div class="srv-card reveal">
+            <div class="srv-icon">❖</div>
+            <h3>Lavado de cabello</h3>
+            <p>Productos premium y masaje.</p>
+            <span class="srv-price">S/.20</span>
+            <a href="#reservas" class="srv-link">Reservar →</a>
+          </div>
+
+          <div class="srv-card reveal featured">
+            <div class="srv-icon">★</div>
+            <h3>Corte + Barba</h3>
+            <p>Pack completo, look impecable.</p>
+            <span class="srv-price">S/.65</span>
+            <a href="#reservas" class="srv-link">Reservar →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GALERÍA ══ -->
+    <section class="sec galeria" id="galeria">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="label">— Galería</p>
+          <h2>Trabajos recientes</h2>
+        </div>
+        <div class="gal-grid reveal">
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80&fit=crop"
+              alt="Trabajo 1"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g1/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80&fit=crop"
+              alt="Trabajo 2"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g2/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80&fit=crop"
+              alt="Trabajo 3"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g3/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80&fit=crop"
+              alt="Trabajo 4"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g4/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&q=80&fit=crop"
+              alt="Trabajo 5"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g5/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=600&q=80&fit=crop"
+              alt="Trabajo 6"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g6/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1593702288056-f173dbb7f97c?w=600&q=80&fit=crop"
+              alt="Trabajo 7"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g7/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+          <a class="gal-item" href="#">
+            <img
+              src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?w=600&q=80&fit=crop"
+              alt="Trabajo 8"
+              onerror="this.src = 'https://picsum.photos/seed/bx-g8/600/600'"
+            />
+            <div class="gal-ov"><i class="fa-solid fa-scissors"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ NOSOTROS ══ -->
+    <section class="sec nosotros" id="nosotros">
+      <div class="wrap nos-wrap">
+        <div class="nos-copy reveal">
+          <p class="label">— Sobre nosotros</p>
+          <h2>Tradición y precisión<br />en cada corte</h2>
+          <p class="nos-p">
+            En <strong>Barber X</strong> combinamos técnica clásica con
+            tendencias contemporáneas. Un equipo apasionado, herramientas de
+            primera y un ambiente diseñado para que disfrutes cada minuto.
+          </p>
+          <div class="nos-stats">
+            <div class="ns">
+              <span class="ns-num" data-target="1200">0</span
+              ><span class="ns-plus">+</span>
+              <label>Clientes</label>
+            </div>
+            <div class="ns">
+              <span class="ns-num" data-target="5">0</span
+              ><span class="ns-plus">+</span>
+              <label>Años de experiencia</label>
+            </div>
+            <div class="ns">
+              <span class="ns-num" data-target="8">0</span>
+              <label>Barberos</label>
+            </div>
+          </div>
+        </div>
+        <div class="nos-img reveal">
+          <img
+            src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900&q=80&fit=crop"
+            alt="Barbero trabajando"
+            onerror="this.src = 'https://picsum.photos/seed/bx-nos/700/800'"
+          />
+          <div class="nos-badge">Desde 2020</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TESTIMONIOS ══ -->
+    <section class="sec testimonios" id="testimonios">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="label">— Testimonios</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "El mejor fade que me han hecho. Atención impecable y ambiente
+              top."
+            </p>
+            <div class="testi-author">
+              <div class="ta-avatar">C</div>
+              <div>
+                <strong>Carlos M.</strong>
+                <span>Cliente desde 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Profesionales de verdad. Salgo siempre con ganas de volver."</p>
+            <div class="testi-author">
+              <div class="ta-avatar">D</div>
+              <div>
+                <strong>Daniel R.</strong>
+                <span>Cliente recurrente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Premium en todos los detalles. Recomendado al 100%."</p>
+            <div class="testi-author">
+              <div class="ta-avatar">J</div>
+              <div>
+                <strong>Javier L.</strong>
+                <span>Nuevo cliente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ RESERVAS ══ -->
+    <section class="sec reservas" id="reservas">
+      <div class="wrap res-wrap">
+        <div class="res-left reveal">
+          <p class="label">— Reservas</p>
+          <h2>Agenda tu próxima cita</h2>
+          <p class="nos-p">
+            Completa el formulario y nuestro equipo confirmará tu reserva en
+            minutos.
+          </p>
+          <ul class="res-list">
+            <li><i class="fa-solid fa-check"></i> Confirmación inmediata</li>
+            <li><i class="fa-solid fa-check"></i> Atención puntual</li>
+            <li><i class="fa-solid fa-check"></i> Cancelación gratuita</li>
+          </ul>
+          <div class="res-info">
+            <div class="ri">
+              <i class="fa-solid fa-location-dot"></i
+              ><span>Calle Imaginaria 123, Ciudad</span>
+            </div>
+            <div class="ri">
+              <i class="fa-solid fa-phone"></i><span>+51 987 654 321</span>
+            </div>
+            <div class="ri">
+              <i class="fa-solid fa-clock"></i
+              ><span>Lun–Vie: 10:00 – 21:00 | Sáb: 10:00 – 18:00</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="res-form reveal" id="reservaForm" novalidate>
+          <div class="fg">
+            <label>Nombre completo</label>
+            <input type="text" id="rNombre" placeholder="Tu nombre" />
+            <span class="fe" id="eRNombre"></span>
+          </div>
+          <div class="fg">
+            <label>Teléfono</label>
+            <input type="tel" id="rTel" placeholder="+51 987 654 321" />
+            <span class="fe" id="eRTel"></span>
+          </div>
+          <div class="fg">
+            <label>Servicio</label>
+            <select id="rSrv">
+              <option value="">Selecciona un servicio…</option>
+              <option>Corte clásico — S/.35</option>
+              <option>Fade — S/.45</option>
+              <option>Barba premium — S/.40</option>
+              <option>Cejas — S/.15</option>
+              <option>Lavado de cabello — S/.20</option>
+              <option>Corte + Barba — S/.65</option>
+            </select>
+            <span class="fe" id="eRSrv"></span>
+          </div>
+          <div class="fg">
+            <label>Fecha</label>
+            <input type="date" id="rFecha" />
+            <span class="fe" id="eRFecha"></span>
+          </div>
+          <button type="submit" class="btn-gold full">Reservar ahora</button>
+          <div class="fsuc" id="rSuccess">
+            <i class="fa-solid fa-circle-check"></i> ¡Reserva enviada! Te
+            confirmamos pronto.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div class="ft-brand">
+          <a href="#hero" class="nav-logo">BX</a>
+          <p>Estilo, precisión y carácter desde 2020.</p>
+        </div>
+        <div class="ft-col">
+          <h4>Contacto</h4>
+          <p>Calle Imaginaria 123<br />Ciudad, 00000</p>
+        </div>
+        <div class="ft-col">
+          <h4>Horarios</h4>
+          <p>Lun–Vie: 10:00 – 21:00</p>
+          <p>Sáb: 10:00 – 18:00</p>
+        </div>
+        <div class="ft-col">
+          <h4>Síguenos</h4>
+          <div class="ft-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <p>© 2025 Barber X. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a
+      href="https://wa.me/51987654321"
+      class="wa-fab"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" aria-label="Arriba">↑</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
